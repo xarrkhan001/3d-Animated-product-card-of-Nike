@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #3b82f6, #1e3a8a);
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.text-transparent {
+  color: transparent;
+}
+
+/* Add this to your CSS file or a <style> tag in your component */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #e2e8f0; /* Tailwind gray-200 */
+  padding: 1rem; /* Tailwind p-4 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  animation: slideIn 0.3s ease-out;
+}
